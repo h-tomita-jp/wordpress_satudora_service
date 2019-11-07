@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* ========================================================
+	baby.css => ベビー用品お得クーポンページ用CSS
+======================================================== */
+
+/* topicpath
+============================================================================================================ */
+.topicpath {
+	margin-bottom:0;
+}
+
+/* baby_main
+============================================================================================================ */
+.baby_main {
+	height:444px;
+	background-image:url(../images/mv_bg.jpg);
+	background-position:80% bottom;
+	background-repeat:no-repeat;
+	background-color:#f4f4f4;
+	position:relative;
+}
+.baby_main:after {
+	content:"";
+	display:block;
+	margin:0 auto;
+	width:119px;
+	height:101px;
+	background-image:url(../images/mv_parts.png);
+	position:absolute;
+	bottom:30px;
+	left:-850px;
+	right:0;
+}
+.baby_main h1 {
+	max-width:1020px;
+	margin:0 auto;
+}
+@media screen and (max-width:680px) {
+	.baby_main {
+		background-size:auto 140px;
+		height:220px;
+	}
+	.baby_main h1 img {
+		max-width:340px;
+		width:70%;
+	}
+}
+
+/* baby_contents
+============================================================================================================ */
+.baby_contents {
+	padding:70px 0 140px;
+}
+.baby_contents .center {
+	margin-bottom:25px;
+	font-weight:bold;
+	font-size:18px;
+	font-size:1.8rem;
+	text-align:center;
+}
+.baby_contents .in_box {
+	padding:50px 130px;
+}
+.baby_contents .in_box > ul > li {
+	padding-bottom:10px;
+}
+.baby_contents .in_box > ul > li + li {
+	border-top:1px solid #e8ecf5;
+	padding-top:10px;
+}
+.baby_contents .in_box ul li dl dt,
+.baby_contents .in_box > ul > li > p {
+	text-indent:-1.4em;
+	padding-left:1.4em;
+	font-weight:bold;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.baby_contents .in_box ul li dl dt:before,
+.baby_contents .in_box > ul > li > p:before {
+	content:"";
+	display:inline-block;
+	margin-right:0.4em;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	background-color:#3e5faa;
+}
+@media screen and (max-width:680px) {
+	.baby_contents {
+		padding:30px 0 50px;
+	}
+	.baby_contents .center {
+		font-size:1.6rem;
+	}
+	.baby_contents .card {
+		margin-bottom:20px;
+		padding-right:0;
+	}
+	.baby_contents .card > img {
+		margin-bottom:20px;
+		position:static;
+	}
+	.baby_contents .card p {
+		margin-bottom:10px;
+	}
+	.baby_contents .card > a {
+		display:block;
+	}
+	.baby_contents .in_box {
+		padding:20px 10px;
+	}
+}

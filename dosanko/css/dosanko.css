@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+/* ========================================================
+	dosanko.css => どさんこ・子育て特典制度ページ用CSS
+======================================================== */
+
+/* topicpath
+============================================================================================================ */
+.topicpath {
+	margin-bottom:0;
+}
+
+/* dosanko_main
+============================================================================================================ */
+.dosanko_main {
+	height:444px;
+	background-image:url(../images/mv_bg.jpg);
+	text-align:center;
+	background-position:center bottom;
+	background-repeat:no-repeat;
+	background-color:#f4f4f4;
+}
+.dosanko_main h1 {
+	padding-top:45px;
+}
+@media screen and (max-width:680px) {
+	.dosanko_main {
+		height:220px;
+		background-size:auto 80%;
+	}
+	.dosanko_main h1 {
+		
+		padding:40px 10px;
+	}
+}
+
+/* dosanko_contents
+============================================================================================================ */
+.dosanko_contents {
+	padding:70px 0 140px;
+}
+.dosanko_contents .center {
+	margin-bottom:25px;
+	font-weight:bold;
+	font-size:18px;
+	font-size:1.8rem;
+	text-align:center;
+}
+.dosanko_contents > .img {
+	margin-bottom:25px;
+	text-align:center;
+}
+.dosanko_contents .card {
+	margin-bottom:55px;
+	padding-right:360px;
+	position:relative;
+}
+.dosanko_contents .card > img {
+	-webkit-filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+	-o-filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+	filter:drop-shadow(0 2px 3px rgba(0,0,0,0.3));
+	position:absolute;
+	right:0;
+	top:0;
+}
+.dosanko_contents .card p {
+	margin-bottom:20px;
+}
+.dosanko_contents .in_box {
+	padding:50px 130px;
+}
+.dosanko_contents .in_box > ul > li {
+	padding-bottom:10px;
+}
+.dosanko_contents .in_box > ul > li + li {
+	border-top:1px solid #e8ecf5;
+	padding-top:10px;
+}
+.dosanko_contents .in_box ul li dl dt {
+	text-indent:-1.4em;
+	padding-left:1.4em;
+	font-weight:bold;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.dosanko_contents .in_box ul li dl dt:before {
+	content:"";
+	display:inline-block;
+	margin-right:0.4em;
+	border-radius:50%;
+	width:12px;
+	height:12px;
+	background-color:#3e5faa;
+}
+.dosanko_contents .in_box ul li dl dd {
+
+}
+@media screen and (max-width:680px) {
+	.dosanko_contents {
+		padding:30px 0 50px;
+	}
+	.dosanko_contents .center {
+		font-size:1.6rem;
+	}
+	.dosanko_contents .card {
+		margin-bottom:20px;
+		padding-right:0;
+	}
+	.dosanko_contents .card > img {
+		margin-bottom:20px;
+		position:static;
+	}
+	.dosanko_contents .card p {
+		margin-bottom:10px;
+	}
+	.dosanko_contents .card > a {
+		display:block;
+	}
+	.dosanko_contents .in_box {
+		padding:20px 10px;
+	}
+}
